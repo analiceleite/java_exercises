@@ -12,12 +12,12 @@ public class Banco {
         String contas = "Os dados da conta são \n";
 
         for (Conta c : this.listaDeContas) {
-            contas += "\nAgência: " + c.agencia + "\n" +
-                    "Conta: " + c.numero + "\n" +
-                    "Saldo: " + c.saldo + "\n" +
-                    "Nome do titular: " + c.titular.nome + "\n" +
-                    "CPF do titular: " + c.titular.cpf + "\n" +
-                    "Data de nascimento do titular: " + c.titular.dataNascimento;
+            contas += "\nAgência: " + c.getAgencia() + "\n" +
+                    "Conta: " + c.getNumero() + "\n" +
+                    "Saldo: " + c.getSaldo() + "\n" +
+                    "Nome do titular: " + c.getTitular().getNome() + "\n" +
+                    "CPF do titular: " + c.getTitular().getCpf() + "\n" +
+                    "Data de nascimento do titular: " + c.getTitular().getDataNascimento();
         }
 
         return contas;
@@ -26,7 +26,7 @@ public class Banco {
     public Conta encontrarConta(int agencia, int numero) {
 
         for (Conta c : this.listaDeContas) {
-            if (c.agencia == agencia & c.numero == numero) {
+            if (c.getAgencia() == agencia & c.getNumero() == numero) {
                 return c;
             }
         }

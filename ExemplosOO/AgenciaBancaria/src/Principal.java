@@ -19,15 +19,15 @@ public class Principal {
                     // Método construtor é utilizado na criação (instância) de um objeto, nesse caso
                     // o new "Conta()"
                     Conta c = new Conta(); // sempre precisamos criar um objeto conta
-                    c.agencia = EntradaSaida.solicitarDadoConta("a agência");
-                    c.numero = EntradaSaida.solicitarDadoConta("o número");
+                    c.setAgencia(EntradaSaida.solicitarDadoConta("a agência"));
+                    c.setNumero(EntradaSaida.solicitarDadoConta("o número")); 
                     // Passos para criar um objeto.
                     Pessoa p = new Pessoa();
-                    p.cpf = EntradaSaida.solicitarCpf();
-                    p.dataNascimento = EntradaSaida.solicitarDadoTitular("data de nascimento");
-                    p.nome = EntradaSaida.solicitarDadoTitular("nome completo");
+                    p.setCpf(EntradaSaida.solicitarCpf());
+                    p.setDataNascimento(EntradaSaida.solicitarDadoTitular("data de nascimento"));
+                    p.setNome(EntradaSaida.solicitarDadoTitular("nome completo"));
 
-                    c.titular = p;
+                    c.setTitular(p); 
 
                     b.adicionarConta(c); // adicionando o objeto conta na lista de contas da classe Banco
 
