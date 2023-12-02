@@ -18,7 +18,7 @@ public class Principal {
                 case 1:
                     Alunos a = new Alunos();
                     // Solicitar dados do aluno
-                    a.nomeAluno = EntradaSaida.solicitarDadoAluno("nome ");
+                    a.nomeAluno = EntradaSaida.solicitarDadoAluno("nome");
                     a.matricula = Integer.parseInt(EntradaSaida.solicitarDadoAluno("número da matrícula "));
                     a.cpf = EntradaSaida.solicitarDadoAluno("CPF ");
                     // Adicionar o objeto aluno na lista de alunos da classe escola
@@ -53,8 +53,25 @@ public class Principal {
                     // Alterar o nome de um aluno específico
                     matricula = Integer.parseInt(EntradaSaida.solicitarDadoAluno("número da matrícula do"));
                     e.alterarNomeAluno(matricula);
-
                     break;
+                case 5:
+                    // Adicionar uma nota ao aluno
+                     matricula = Integer.parseInt(EntradaSaida.solicitarDadoAluno("número da matrícula do"));
+                     e.adicionarNotaAluno(matricula);
+
+                break;
+
+                case 6:
+                    // Calcular a média de notas do aluno  
+                     matricula = Integer.parseInt(EntradaSaida.solicitarDadoAluno("número da matrícula do"));
+                     EntradaSaida.mostrarMedia(e.calcularMedia(matricula));
+
+                     break;
+
+                case 7:
+                    // Sair do sistema
+                    System.exit(0);
+
             }
 
         } while (opcao != 7);

@@ -18,13 +18,14 @@ public class EntradaSaida {
 
    
     public static int escolherOpcaoMenu() {
-        return Integer.parseInt(JOptionPane.showInputDialog(null, "Escolha a opção: \n" +
+        return Integer.parseInt(JOptionPane.showInputDialog(null, "Escolha uma opção: \n" +
                 "1 - Cadastrar aluno e suas notas \n" +
                 "2 - Ver os dados de todos os alunos e suas notas \n" +
                 "3 - Ver dados de um aluno específico e suas notas \n" +
                 "4 - Alterar o nome de um aluno específico \n" +
-                "5 - Calcular a média de um aluno específico \n" +
-                "6 - Sair do programa"));
+                "5 - Adicionar nota a um aluno específico \n" +
+                "6 - Calcular a média de um aluno específico \n" +
+                "7 - Sair do programa"));
     }
 
     public static void mostrarAlunos(String listarAlunos) {
@@ -40,6 +41,10 @@ public class EntradaSaida {
     }
     public static void mostrarAlerta(String msg) {
         JOptionPane.showMessageDialog(null, msg);
+    }
+
+    public static void mostrarMedia(double media) {
+        JOptionPane.showMessageDialog(null, "A média do aluno é: " + media);
     }
  
 
