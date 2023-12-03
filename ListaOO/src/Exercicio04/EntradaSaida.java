@@ -8,10 +8,11 @@ public class EntradaSaida{
         "1 - Cadastrar tarefas \n" +
         "2 - Visualizar tarefas \n" +
         "3 - Visualizar tarefas em aberto \n" +
-        "4 - Visualizar tarefas concluídas \n" +
-        "5 - Alterar status de alguma tarefa \n" +
-        "6 - Excluir tarefa \n" +
-        "7 - Ver todos os tipos de tarefas \n" +
+        "4 - Visualizar tarefas em andamento" +
+        "5 - Visualizar tarefas concluídas \n" +
+        "6 - Alterar status de alguma tarefa \n" +
+        "7 - Excluir tarefa \n" +
+        "8 - Ver todos os tipos de tarefas \n" +
         "0 - Sair do programa"));
     }
 

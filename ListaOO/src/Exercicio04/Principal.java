@@ -26,29 +26,37 @@ public class Principal {
 
         case 2:
         // Visualizar todas as tarefas
-       EntradaSaida.mostrarTarefas(CRUD.listarTarefas());
-        
-          break;
+        EntradaSaida.mostrarTarefas(CRUD.listarTarefas());
+        break;
+
         case 3:
         // Visualizar tarefas em aberto
+        EntradaSaida.mostrarTarefas(c.mostrarTarefasEmAberto());
+        break;
 
-          break;
         case 4:
-        // Visualizar tarefas concluídas
+        // Visualizar tarefas em andamento
+        EntradaSaida.mostrarTarefas(c.mostrarTarefasEmAndamento());
 
-          break;
+        break;
         case 5:
+        // Visualizar tarefas concluídas
+        EntradaSaida.mostrarTarefas(c.mostrarTarefasConcluidas());
+        break;
+
+        case 6:
         // Alterar status de alguma tarefa
 
-          break;
-        case 6:
+        break;
+        case 7:
         // Excluir tarefa
 
           break;
-        case 7:
-        // Ver todos os tipos de tarefas
+        case 8:
+        // Mostrar todos os tipos de tarefas
 
           break;
+
         default:
           System.exit(0);
           break;
