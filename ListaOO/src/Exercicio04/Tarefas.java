@@ -10,5 +10,3 @@ public class Tarefas {
 
 }
 
-// Mostrar tarefas em andamento 
-// Mensagem estranha após excluir tarefa
